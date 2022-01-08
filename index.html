@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WoogeUploads</title>
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+</head>
+<body>
+    <div class="header">
+    <h1>WoogeUploads</h1>
+    <hr>
+     <span class="links">
+        <p>
+            <a href="/">Home</a>
+            <a href="/faq.html">FAQ</a>
+            <a href="/">Legal</a>
+        </p>
+     </span>
+    <hr>
+    </div>
+    <form action="./api/uploadFile.php" method="post" enctype="multipart/form-data">
+        <br>
+        Upload a File (Check The FAQ before uploading files!)
+        <br>
+        <br>
+        <input type="file" name="the_file" id="fileToUpload">
+        <input type="submit" name="submit" value="Start Upload">
+    </form>
+    <hr>
+</body>
+</html>

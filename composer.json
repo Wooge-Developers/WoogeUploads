@@ -1,0 +1,12 @@
+{
+    "name": "b-ali/wooge-uploads",
+    "description": "woogeuploads",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Hedy",
+            "email": "43907004+Hedy88@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}

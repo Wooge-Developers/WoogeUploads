@@ -1,31 +1,47 @@
+<!-- 
+    gato
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta property="og:title" content="woogeUploads">
+    <meta property="og:description" content="the worst file upload service">
+    <meta name="description" content="the worst file upload service">
+    <meta property="og:type" content="website">
     <title>WoogeUploads</title>
     <link rel="stylesheet" href="./css/main.css" type="text/css">
 </head>
 <body>
-    <div class="header">
-    <h1>WoogeUploads</h1>
-    <hr>
-     <span class="links">
-        <p>
-            <a href="/">Home</a>
-            <a href="/faq.html">FAQ</a>
-            <a href="/">Legal</a>
-        </p>
-     </span>
-    <hr>
-    </div>
-    <form action="./api/uploadFile.php" method="post" enctype="multipart/form-data">
-        <br>
-        Upload a File (Check The FAQ before uploading files!)
-        <br>
-        <br>
-        <input type="file" name="the_file" id="fileToUpload">
-        <input type="submit" name="submit" value="Start Upload">
-    </form>
-    <hr>
+    <header>
+        <img src="/assets/img/logo.png" alt="logo" style="margin: auto; display: block;">
+    </header>
+    <br>
+    <br>
+    <center>
+        <div class="greeting">
+          Uploads up to 2GB are allowed. You really 
+          <b>
+              read the <a href="/faq.html" class="linkbutton">FAQ</a>
+          </b>
+        </div>
+    </center>
+    <br>
+    <br>
+    <noscript>
+        <div class="noscriptwarning">Javascript is mostly required to use WoogeUploads.</div> 
+    </noscript>   
+    <center>
+        <form action="./api/uploadFile.php" method="post" enctype="multipart/form-data">
+            <span class="upload-msg">Select a file to upload</span>
+            <br>
+            <br>
+            <input type="file" name="the_file" id="fileToUpload">
+            <input type="submit" name="submit" value="Start Upload">
+        </form>
+        </center>
+        <div class="img">
+            <img src="./assets/img/marisa.png" alt="marisa nsfw 2021">
+        </div>
 </body>
 </html>

@@ -20,7 +20,7 @@
         $errors[] = "This file extension is not allowed. Please check the FAQ for the list of allowed file extensions.";
       }
 
-      if ($fileSize > 4000000) {
+      if ($fileSize > 40000000000000000000000000) {
         $errors[] = "File exceeds maximum size (4MB)";
       }
 
